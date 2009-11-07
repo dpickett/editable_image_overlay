@@ -1,0 +1,39 @@
+div.editable_avatar {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+a.avatar_overlay {
+  padding: 5px 0 7px;
+  position: absolute;
+  outline: none;
+  border: 1px solid #ccc
+  top: 0;
+  right: 3px;
+  text-decoration: none;
+  display:inline;
+  -moz-background-clip: border;
+  -moz-background-inline-policy: continuous;
+  -moz-background-origin: padding
+}
+
+
+a.avatar_overlay.hidden {
+  display: none;
+}
+
+a.avatar_overlay:hover {
+  text-decoration: underline;
+  display: inline;
+}
+
+a.avatar_overlay:active {
+  outline: none;
+}
+
+div.editable_avatar img {
+  border: 1px solid #ccc;
+}
