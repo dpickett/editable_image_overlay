@@ -1,0 +1,26 @@
+h1. editable_image_overlay
+
+Overlay your images with Edit links like Facebook
+
+h2. Requirements
+
+* JQuery 
+
+h2. Browser Support
+
+This has been tested in the latest versions of Firefox, Chrome, and IE. 
+
+Supported Browsers
+* Firefox 3.5, 3.0
+* IE8, IE7, IE6
+* Safari 4
+* Chrome 4
+
+h2. Example Usage and Instructions
+
+"View the demo and instructions":http://dpickett.github.com/editable_image_overlay
+
+h2. MIT License
+
+h2. TODO
+ 
