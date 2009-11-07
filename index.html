@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <title>under_construction @ GitHub - Enlight Solutions, Inc.</title>
+    <title>editable image overlay - JQuery - Enlight Solutions, Inc.</title>
     <link rel="stylesheet" href="stylesheets/es_github.css" type="text/css" media="screen" title="no title" charset="utf-8" />
     <link rel="stylesheet" href="stylesheets/editable_image_overlay.css" type="text/css" media="screen" title="no title" charset="utf-8" />
   </head>
@@ -14,16 +14,46 @@
       <a href="http://github.com/dpickett/editable_image_overlay"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
   
       <a href="http://www.enlightsolutions.com"><img src="images/es_logo.png" alt="Enlight Solutions, Inc. Logo"/></a>
-        <h1>editable_image_overlay</h1>
-        <p>The Following Code is on this page</p>
-        <pre>
-        </pre>
+      <h1>editable_image_overlay</h1>
+      <p>
+        Do you like the way facebook positions their avatar edit links?
+      </p>
 
-      <div class="editable_avatar">
-        <a href="#">Edit</a>
+      <p>
+        <img src="images/fb_change_picture.png" alt="Facebook Change Picture Screenshot" />
+      </p>
+
+      <p>
+        I wrote a quick JQuery utility to do something similar.
+      </p>
+      <p>
+        Mouse over the image to view a clickable link in the top right corner
+      </p>
+
+      <div class="editable_avatar top-right">
+        <a href="#" class="hidden">Edit</a>
         <img src="images/schneider.jpg" alt="schneider" height="200" />
       </div>
+      <br />
+      <p>The Following Code is on this page</p>
+      <pre>
 
+&lt;div class="editable_avatar top-right"&gt;
+  &lt;a href="#" class="hidden"&gt;Edit&lt;/a&gt;
+  &lt;img src="images/schneider.jpg" alt="schneider" height="200" /&gt;
+&lt;/div&gt;
+
+$(document).ready(function(){
+  $(".editable_avatar").editable_image_overlay();
+  $(".editable_avatar a").click(function(e){
+    e.preventDefault();
+    alert("Editing...");
+  });
+});
+
+      </pre>
+
+      
       <script src="http://www.google.com/jsapi" type="text/javascript" charset="utf-8"></script>
       <script type="text/javascript">
         google.load("jquery", "1.3.2");
@@ -38,7 +68,6 @@
           $(".editable_avatar a").click(function(e){
             e.preventDefault();
             alert("Editing...");
-            $(this).blur();
           });
         });
       </script>

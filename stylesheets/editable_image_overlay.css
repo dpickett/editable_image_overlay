@@ -14,14 +14,13 @@ a.avatar_overlay {
   top: 0;
   right: 3px;
   text-decoration: none;
-  display:inline;
+  display:block;
   -moz-background-clip: border;
   -moz-background-inline-policy: continuous;
   -moz-background-origin: padding
 }
 
-
-a.avatar_overlay.hidden {
+a.hidden {
   display: none;
 }
 
